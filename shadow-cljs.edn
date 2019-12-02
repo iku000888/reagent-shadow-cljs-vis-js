@@ -1,0 +1,11 @@
+{:dependencies [[reagent  "0.8.1"]]
+ :source-paths ["src"]
+ :builds
+ {:dev
+  {:target :browser
+   ;;Externs issue?
+   :compiler-options {:optimizations :simple}
+   :modules {:main {:init-fn my.dev/init}}
+   :devtools
+   {:http-root "public"
+    :http-port 8082}}}}
