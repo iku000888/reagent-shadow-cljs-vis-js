@@ -4,7 +4,6 @@
  {:dev
   {:target :browser
    ;;Externs issue?
-   :compiler-options {:optimizations :simple}
    :modules {:main {:init-fn my.dev/init}}
    :devtools
    {:http-root "public"

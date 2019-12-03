@@ -22,7 +22,8 @@
                          :manipulation
                          {:addEdge (fn [data callback]
                                      (on-edge-add {:from (.-from data)
-                                                   :to (.-to data)}))}}))]
+                                                   :to (.-to data)})
+                                     (callback data))}}))]
                (when add-edge-mode
                  (.addEdgeMode nw))
                (doto nw
